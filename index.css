@@ -1,0 +1,369 @@
+/*
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:bisque;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}    
+
+h1{
+    margin: 10px;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:600px;
+    background-color: aqua;
+}
+
+.btns{
+    margin: 10px;
+}
+#quantidade-de-palavras{
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.input-palavras{
+    width: 75px;
+    height: 75px;
+    font-size: 4.0rem;
+    margin: 5px;
+    text-align: center;
+    caret-color: transparent;
+}
+.input-palavras:hover{
+    cursor: pointer;
+}
+
+.input-palavras:focus{
+    box-shadow:0px 0px 0px 1px black inset;
+}
+
+.bloco-container-letras{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+*/
+
+/* Definições de estilo para o Dark Mode */
+
+/* Reseta o box-model e margens/paddings */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Container principal */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque; /* Cor de fundo padrão */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}    
+
+h1 {
+    margin: 10px;
+}
+
+/* Estilo para a área principal (main) */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    background-color: aqua; /* Cor de fundo padrão */
+}
+
+/* Estilo para botões */
+.btns {
+    margin: 10px;
+}
+
+/* Estilo do input de quantidade */
+#quantidade-de-palavras {
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Resetando box model e margens/paddings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do container principal */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque; /* Cor de fundo padrão */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}    
+
+h1 {
+    margin: 10px;
+}
+
+/* Estilo para a área principal (main) */
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;  /* Ajuste a largura para telas menores */
+    max-width: 600px;  /* Tamanho máximo para telas grandes */
+    background-color: aqua; /* Cor de fundo padrão */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;  /* Centralizando */
+}
+
+/* Estilo para botões */
+.btns {
+    margin: 10px;
+}
+
+/* Estilo do input de quantidade */
+#quantidade-de-palavras {
+    width: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilo para os inputs de palavras */
+.input-palavras {
+    width: 75px;
+    height: 75px;
+    font-size: 4.0rem;
+    margin: 5px;
+    text-align: center;
+    caret-color: transparent;
+}
+
+/* Estilo para o hover dos inputs de palavras */
+.input-palavras:hover {
+    cursor: pointer;
+}
+
+/* Estilo de foco dos inputs de palavras */
+.input-palavras:focus {
+    box-shadow: 0px 0px 0px 1px black inset;
+}
+
+/* Estilo do bloco de letras */
+.bloco-container-letras {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* ----- Dark Mode ----- */
+
+/* Aplicar Dark Mode quando o usuário preferir */
+@media (prefers-color-scheme: dark) {
+    /* Cor de fundo do container */
+    .container {
+        background-color: #121212; /* Fundo escuro */
+        color: #e0e0e0; /* Texto claro */
+    }
+
+    /* Cabeçalho */
+    h1 {
+        color: #f0f0f0; /* Título em branco */
+    }
+
+    /* Estilo para a área principal (main) */
+    main {
+        background-color: #1c1c1c; /* Fundo escuro */
+    }
+
+    /* Estilo do botão */
+    .btns {
+        background-color: #6200ea; /* Cor roxa */
+        color: #fff; /* Texto branco */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .btns:hover {
+        background-color: #3700b3; /* Hover mais escuro */
+    }
+
+    /* Estilo para os inputs */
+    #quantidade-de-palavras {
+        background-color: #333; /* Fundo escuro */
+        color: #fff; /* Texto branco */
+        border: 1px solid #555; /* Borda suave */
+    }
+
+    /* Estilo para os inputs de palavras */
+    .input-palavras {
+        background-color: #333; /* Fundo escuro */
+        color: #fff; /* Texto branco */
+        border: 1px solid #555; /* Borda suave */
+        padding: 10px; /* Espaçamento interno */
+        font-size: 4.1rem; /* Tamanho de fonte */
+        border-radius: 5px; /* Bordas arredondadas */
+        text-align: center; /* Alinha o texto horizontalmente no centro */
+        line-height: 75px; /* Ajuste o alinhamento vertical, igual à altura do input */
+        width: 75px; /* Largura fixa */
+        height: 75px; /* Altura fixa */
+        transition: all 0.3s ease; /* Transição suave para a borda */
+    }
+    
+    /* Estilo para o foco do input */
+    .input-palavras:focus {
+        outline: none; /* Remove a borda padrão do navegador */
+        border: 1px solid #00bcd4; /* Borda de foco em azul claro */
+        box-shadow: 0 0 0 2px rgba(95, 0, 212, 0.5); /* Sombra suave ao redor do input */
+        border-bottom: 4px solid #6200ea; /* Linha na parte inferior em azul claro */
+    }
+
+    /* Estilo para o bloco de letras */
+    .bloco-container-letras {
+        background-color: #1c1c1c; /* Fundo escuro */
+        color: #bbb; /* Texto em cinza claro */
+    }
+
+    /* Outros elementos de bloco */
+    .bloco-container {
+        background-color: #1c1c1c; /* Fundo escuro */
+        color: #e0e0e0; /* Texto claro */
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+
+}
+
+/* Estilos para o bloco de palavras */
+.input-formulario    {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 5px;
+}
+.bloco-container {
+    display: flex;
+    flex-direction: column;  /* Organizar elementos verticalmente */
+    align-items: flex-start;  /* Alinhar à esquerda */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #1c1c1c;  /* Fundo escuro */
+    color: #e0e0e0;  /* Texto claro */
+    border-radius: 8px;
+    width: 90%;  /* Ajustar o tamanho conforme necessário */
+    max-width: 800px;  /* Limitar largura */
+    /* Definindo o tamanho máximo do contêiner */
+    max-height: 300px;  /* Altura máxima de 500px */
+    overflow-y: auto;  /* Habilita o scroll vertical quando o conteúdo excede 500px */
+}
+
+/* Estilo do contador de palavras */
+#contador-de-palavaras {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo do bloco de palavras */
+#palavras {
+    display: flex;
+    flex-wrap: wrap;  /* Permite que as palavras se distribuam em várias linhas */
+    gap: 10px;  /* Espaço entre as palavras */
+    justify-content: flex-start;  /* Alinhar as palavras à esquerda */
+}
+
+/* Estilo para cada palavra dentro do bloco */
+.bloco-palavras p {
+    background-color: #333;  /* Fundo escuro para cada palavra */
+    color: #fff;  /* Texto branco */
+    padding: 10px 15px;
+    border-radius: 5px;  /* Bordas arredondadas */
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+/* Adicionando hover para as palavras */
+.bloco-palavras p:hover {
+    background-color: #6200ea;  /* Cor ao passar o mouse */
+    cursor: pointer;
+}
+
+/* ----- Media Queries para Responsividade ----- */
+
+/* Para telas pequenas (mobile) */
+@media (max-width: 600px) {
+    main {
+        width: 95%;  /* Ajustando a largura do formulário */
+        max-width: 100%;  /* Maximizando largura em telas menores */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .bloco-container {
+        width: 100%;  /* Largura 100% no contêiner */
+        max-width: none;  /* Remover limite de largura */
+        max-height: 400px;  /* Ajustar altura do contêiner para telas pequenas */
+    }
+
+    .bloco-palavras p {
+        font-size: 1rem;  /* Reduzir o tamanho das palavras em telas menores */
+        padding: 8px 12px;
+    }
+
+    #quantidade-de-palavras {
+        font-size: 16px;  /* Ajustar o tamanho da fonte no input */
+    }
+}
+
+/* Para telas médias (tablets e pequenas desktops) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .bloco-container {
+        width: 90%;  /* Ajustar para 90% em tablets */
+    }
+
+    .bloco-palavras p {
+        font-size: 1.2rem;  /* Ajuste para tamanho intermediário */
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ache Palavras</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                ACHAR PALAVRAS DO SEU JEITO
+            </h1>
+        </header>    
+            <main>
+                <div class="formulario">
+                    <label for="quantidade-de-palavras">Quantidade:
+                        <input type="text" name="quantidade-de-palavras" id="quantidade-de-palavras" maxlength="2" class="input-formulario">
+                    </label>
+                    <label for="letras-para-incluir">Incluir:
+                        <input type="text" name="letras-para-incluir" id="letras-para-incluir" maxlength="25" placeholder="Seperar por vírgula: A, B, C" class="input-formulario">
+                    </label>
+                    <br>
+                    <label for="letras-para-excluir">Excluir:
+                        <input type="text" name="letras-para-excluir" id="letras-para-excluir" maxlength="25" placeholder="Seperar por vírgula: A, B, C" class="input-formulario">
+                    </label>
+                    
+                </div>
+                <button id="btn-procurar" class="btns">Prucurar</button>
+            </main>
+                <div class="bloco-container-letras" id="palavras-por-letras">
+
+                </div>
+                <div class="bloco-container" id="geral-container">
+                    <span id="contador-de-palavaras"></span>
+                    <div id="palavras"  class="bloco-palavras">
+                    </div>
+                </div>
+
+        
+    </div>
+
+ <script src="index.js"> </script>   
+ <script src="layout.js"></script>
+ <script src="isAnagrama.js"></script>
+ <script src="somaRecursiva.js"></script>
+</body>
+</html>
