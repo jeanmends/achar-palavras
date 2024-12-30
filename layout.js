@@ -53,3 +53,29 @@ document.getElementById("quantidade-de-palavras")
     criarInputs(quantiade);
 });
 
+/*
+
+const inputIncluir = document.getElementById("letras-para-incluir");
+
+input.addEventListener("input", () => {
+    let value = input.value.replace(/,/g, ""); // Remove as vírgulas existentes
+    value = value.split("").join(","); // Adiciona vírgulas entre os caracteres
+    input.value = value;
+});
+
+*/
+
+function aplicarMascaraVirgula(inputElement) {
+    inputElement.addEventListener("input", () => {
+        let value = inputElement.value.replace(/,/g, ""); // Remove vírgulas existentes
+        value = value.split("").join(","); // Adiciona vírgulas entre caracteres
+        inputElement.value = value;
+    });
+}
+
+document.querySelectorAll(".input-formulario").forEach((element, index) => {
+    if(index != 0){
+        aplicarMascaraVirgula(element);
+    }
+    
+});
