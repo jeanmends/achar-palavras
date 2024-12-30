@@ -272,6 +272,8 @@ main {
 
     .container {
         padding: 10px;
+        height: 800px;
+        max-height: 1000px;
     }
 
     .bloco-container {
@@ -287,6 +289,39 @@ main {
 
     #quantidade-de-palavras {
         font-size: 16px;  /* Ajustar o tamanho da fonte no input */
+    }
+
+    .input-palavras{
+        width: 45px;
+        height: 45px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .bloco-container-letras{
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .input-formulario{
+        margin: 0;
+        width: 100%;
+    }
+
+    .btns{
+        align-self: center;
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
     }
 }
 
