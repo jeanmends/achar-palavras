@@ -181,6 +181,7 @@ main {
         width: 75px; /* Largura fixa */
         height: 75px; /* Altura fixa */
         transition: all 0.3s ease; /* Transição suave para a borda */
+        text-transform: lowercase;
     }
     
     /* Estilo para o foco do input */
@@ -213,6 +214,7 @@ main {
     padding: 5px;
     font-size: 1rem;
     margin: 5px;
+    text-transform: lowercase;
 }
 .bloco-container {
     display: flex;
@@ -294,6 +296,8 @@ main {
     .input-palavras{
         width: 45px;
         height: 45px;
+        font-size: 3rem;
+        
     }
     h1{
         font-size: 2rem;
